@@ -6,7 +6,7 @@ check_inverter.py - Script for reading and printing values from Sofar Solar HYD 
 HYD 5-20K-3PH Modbus (Client).xlsx - Registry documentation from Sofar support
 
 
-#Checklist
+# Checklist
 1/ Physical connection
 RS485+ should be connected to PIN 1 or 2, RS485- should be connected to PIN 3 or 4
 The remaining PINs should be terminated using 120 Ohm resistor. This might work fine without the resistor too.
