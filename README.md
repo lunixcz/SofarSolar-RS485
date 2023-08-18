@@ -6,8 +6,7 @@ check_inverter.py - Script for reading and printing values from Sofar Solar HYD 
 HYD 5-20K-3PH Modbus (Client).xlsx - Registry documentation from Sofar support
 
 
-# Checklist
-1/ Physical connection
+# 1/ Physical connection
 RS485+ should be connected to PIN 1 or 2, RS485- should be connected to PIN 3 or 4
 The remaining PINs should be terminated using 120 Ohm resistor. This might work fine without the resistor too.
 
@@ -20,10 +19,11 @@ Original Industrial USB to RS485 Serial Converter Half Duplex FT232RL Communicat
 I use FTP cable and using one pair for + and another pair for - as the single wires are very tiny.
 
 
-2/ Invertor settings
+
+# 2/ Invertor settings
 Under communication options make sure the baud rate and client ID matches the values in the script.
 
 ID 01 on inverter should be configured as 0x01 in the script.
 
-3/ Unreliable comm
+# 3/ Unreliable communication
 The communication is not reliable, that means sometimes read error occurs. I've put all in while cycle an in case of some read fails the script reads all values again before printing them. In my case approx 1 in 10 tries fails.
